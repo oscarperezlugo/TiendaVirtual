@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TiendaVirtual.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Oscar Perez Lugo" content="Developer">
+        <meta name="description"  content="Una Experiencia Paladar">
+        <meta name="keywords"  content="Carne, Pollo, Valencia, Venezuela">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bodegón Paladar</title>      
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="Content/Columnas.css" rel="stylesheet" /> 
+        <link href="Content/estilos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+               
+    </head>
+    <body>
+        <form id="form1" runat="server">                
+            <nav  id="nave" class="fila fijador">
+                <div  class="col2L">
+                    <img id="logo" src="img/Recurso3.png" />
+                </div>
+                <div id="barra" class="col4L">
+                    <input class="col8L" id="busqueda" type="text" placeholder="  Hoy estoy buscando..." />
+                    <button class="fa fa-search col1L" id="botonbuscar"></button>
+                </div>
+                <div id="registro" class="col1L">
+                    <div class="fila">
+                        <a href="Registro.aspx" id="registrobot" class="col10L">Registrarse</a>
+                    </div>
+                    <div class="fila">
+                        <a href="Login.aspx" id="sesion" class="col10L">Iniciar Sesión</a>
+                    </div>             
+                </div>
+                <div id="zona" class="col1L">
+                    <div class="fila">
+                        <a href="Zona.aspx" id="zonat" class="col10L">Zona</a>
+                    </div>
+                    <div class="fila">
+                        <a id="carabobo" href="Zona.aspx" class="col10L">Carabobo</a>
+                    </div>
+                </div>
+                <div id="moneda" class="col1L">
+                    <div class="fila">
+                        <a id="monedat" class="col10L">Moneda</a>
+                    </div>
+                    <div class="fila">                                        
+                        <a ID="Dolar" runat="server" class="col10L" href="Default.aspx">$/Bs.</a>                                        
+                    </div>
+                </div>                
+                    <div class="col1L" >
+                        <label for="checkdos" class="fa fa-shopping-cart" id="botoncarrito"></label>                      
+                    </div>                                                  
+            </nav>
+            <nav id="subnav" class="fila fijadordos">
+                <div class="col1L">
+                    <label class="fa fa-bars botonsub" for="check"></label><label class="botonsub" for="check"> Bodegón</label>
+                </div>
+                <div class="col7L">&nbsp;</div>
+                    <div class="col2L">
+                        <asp:Label id="nombrecliente" class="botonsub" runat="server" CssClass="botonsub"></asp:Label>
+                    </div>                
+            </nav> 
+            
+            <div id="cajacontenedor">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>    
+            <input type="checkbox" class="checkbox" id="check"/> 
+            <div class="leftpanel">
+                <ul>
+                    <li><label class="fa fa-check"></label>  Harinas y Cereales</li>
+                    <li><label class="fa fa-check"></label>  Pasta y Granos</li>
+                    <li><label class="fa fa-check"></label>  Salsas</li>
+                    <li><label class="fa fa-check"></label>  Aceites, Vinagres y Condimentos</li>
+                    <li><label class="fa fa-check"></label>  Azucar y Reposteria</li>
+                    <li><label class="fa fa-check"></label>  Dulceria</li>
+                    <li><label class="fa fa-check"></label>  Salsas</li>
+                    <li><label class="fa fa-check"></label>  Panaderia</li>
+                    <li><label class="fa fa-check"></label>  Salsas</li>
+                    <li><label class="fa fa-check"></label>  Cuidado del Cabello</li>
+                    <li><label class="fa fa-check"></label>  Cuidado Corporal</li>
+                    <li><label class="fa fa-check"></label>  Higiene Bucal</li>
+                    <li><label class="fa fa-check"></label>  Salsas</li>
+                    <li><label class="fa fa-check"></label>  Licores</li>
+                    <li><label class="fa fa-check"></label>  Vinos</li>
+                    <li><label class="fa fa-check"></label>  Cervezas</li>
+                    <li><label class="fa fa-check"></label>  Salsas</li>
+                    <li><label class="fa fa-check"></label>  Res</li>
+                    <li><label class="fa fa-check"></label>  Pollos</li>
+                    <li><label class="fa fa-check"></label>  Pescados y Mariscos</li>
+                    <li><label class="fa fa-check"></label>  Cerdo</li>
+                    <li><label class="fa fa-check"></label>  Parrillera</li>
+                </ul>
+            </div>
+            <input type="checkbox" class="checkboxdos" id="checkdos"/>
+            <div class="rightpanel"></div>
+            <%--<div id="prefooter">--%>
+                <div class="fila">
+                    <div id="prefooter1" class="col10L">
+                        <h3>Utilidades</h3>
+                    </div> 
+            <%--</div>        
+            <div class="fila">--%>
+                    <div id="prefooter2" class="col10L">
+                        <div class="col1L">&nbsp;</div>                                                                          
+                        <a href="Somos.aspx" class="col1L botonfooter2">Preguntas frecuentes</a>                                
+                            <a href="Zona.aspx" class="col1L botonfooter2">Zonas de Reparto</a>                                
+                        <a href="Terminos.aspx" class="col1L botonfooter2">Términos y Condiciones</a>                
+                        <div class="col1L">&nbsp;</div>
+                    </div>           
+            <%--</div>
+            <div class="fila">--%>
+                    <div id="prefooter3" class="col10L">
+                        <h3>Atención al Cliente</h3>
+                    </div>           
+            <%--</div>
+                <div class="fila">--%>
+                    <div id="prefooter4" class="col10L">
+                        <h6>+58 414-0456431 atencionalcliente@bodegonpaladar.com Horario ATC: 8:00 am a 8:00 pm Horario de Entrega: 8:30 am a 10:00 pm En menos de 3 Horas, Gratis el mismo día</h6>
+                    </div>           
+                </div>
+        <%--</div>--%>
+            <footer class="fila">
+                <h6>&#169; Bodegón Paladar 2020, Urb. La Alegría, Quinta Victoria Valencia - Carabobo. DESARROLLADO POR AVILA TECHNOLOGY</h6>
+            </footer>
+        </form>
+    </body>    
+</html>
+ 

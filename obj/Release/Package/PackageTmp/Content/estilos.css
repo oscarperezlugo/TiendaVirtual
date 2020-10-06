@@ -1,0 +1,519 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nave {       
+    background-color: #E39D2E;
+}
+#subnav {    
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px 10px 10px;
+    box-sizing: border-box;
+}
+.botonsub {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    
+}
+.botonfooter2 {
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    padding:10px;
+}
+nav div{    
+    float: left;
+    
+}
+#logo{
+    margin:10px;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+}
+
+#busqueda {
+    margin: 10px 0px 10px  10px;
+    height: 60px;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS';
+    font-weight:bold;
+    border-color: black;
+}
+#botonbuscar {
+    margin: 10px 10px 10px -4px ;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 20px;
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+.botonbodegon {
+    width:200px;
+    margin:20px;
+    color:white;
+    background-color:black;
+    border-radius:20px;
+    border-color:black;
+    padding:10px;
+    font-family:'Trebuchet MS';
+    text-decoration:none;
+}
+.botonbodegon:hover {
+    background-color:gray;    
+}
+#botoncarrito {
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    text-decoration: none;    
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+}
+#cliente {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    color: black;
+    padding: 10px;
+}
+#barra{
+    margin:0px; 
+}
+#botonbuscar:hover {
+    border-color: black;
+    background-color: gray;
+    color: black;
+}
+#botoncarrito:hover {
+    border-color: gray;
+    background-color: none;
+    color: gray;
+}
+#botoncarrito:active {
+    border-color: gray;
+    background-color: none;
+    color: white;
+}
+#registrobot {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    color: black;
+    padding:10px;
+}
+#sesion {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+#zonat {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    color: black;
+    padding: 10px;
+}
+
+#carabobo {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+#monedat {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    color: black;
+    padding: 10px;
+}
+
+#Dolar{
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+#Bolivar {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+#prefooter1{
+    text-align:center;
+    background-color:dimgrey;
+    padding:10px;
+    color:white;
+    font-family:'Trebuchet MS';
+    margin:0;
+}
+#prefooter3 {
+    text-align: center;
+    background-color: dimgrey;
+    padding: 10px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    margin: 0;
+}
+#prefooter4 {
+    text-align: center;
+    background-color: dimgrey;
+    padding: 10px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    margin: 0;
+}
+#prefooter2 {
+    float:left;
+    text-align: center;
+    background-color: dimgrey;
+    padding: 10px;
+    color: white; 
+    margin:0;
+}
+#prefooter{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 0px;
+    color: white;
+    font-family: 'Trebuchet MS'
+}
+
+.tiendaitem {  
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 200px;
+    height:438px;
+    margin: 15px;
+    padding:5px;   
+    float:left;
+}
+.filaitem{
+    height:10px;
+    margin:0px;
+    padding:0;
+}
+.columnaitem{
+    width:196px;
+    margin:0px;
+}
+.botonagregar {
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-family: 'Trebuchet MS';
+    border-radius: 5px;
+    width: 100px;
+    text-align:center;
+}
+.botonagregar:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.botonagregar:active {
+    background-color: gray;
+    color: white;
+    border-color: gray;
+}
+.titulotienda {
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: #E39D2E;    
+    text-align: left;
+}
+.cantidadtienda {
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: gray;
+    text-align:left;
+}
+.categoriatienda {
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: darkblue;
+    text-align: left;
+}
+.impuestotienda {
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: gray;
+    text-align: left;
+}
+.preciotienda {
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: #E39D2E;
+}
+.preciotiendados {
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    color: gray;
+    text-align: center;
+}
+#cajacontenedor {
+    margin-top:118px;
+    position:relative;
+    background-color: white;
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+}
+center a{
+    display:none;
+}
+.linea{
+    border-top:1px solid black;
+}
+.formulario{
+    padding:10px;
+    width:50%;
+    border-color:black;
+    margin:20px;
+    border-radius:5px;
+    font-family:'Trebuchet MS';
+}
+.baseform{
+    text-align:center;
+}
+.botonsubmit{
+    background-color:black;
+    border-color:black;
+    width:50%;
+    font-family:'Trebuchet MS';
+    color:white;    
+    border-radius:5px;
+    padding:10px;
+}
+.enlaces{
+    text-decoration:none;
+    font-family:'Trebuchet MS';
+    color:darkblue;
+}
+#terminos{
+    margin-right:0px;
+    margin:0;
+    width:80%;    
+    padding:20px;
+    font-family:'Trebuchet MS';
+    color:black;
+}
+.fijador {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.fijadordos {
+    margin:0;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    z-index: 1;
+    overflow: hidden;
+}
+#mapa {
+    width: 100%;
+    height:500px; 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.menu{
+    width:2.2rem;
+    height:2.7rem;
+    background-color:black;
+    border-radius:0.5rem;
+    position:absolute;
+    top:50%;
+    left:5%;
+    font-family:'Trebuchet MS';
+    font-size:2rem;
+    color:white;
+    text-align:center;
+    transition: left 0.7s;
+}
+.checkbox:checked ~ .menu{
+    left:40%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.checkbox:checked ~ .leftpanel {
+    left: 0;    
+}
+.checkboxdos:checked ~ .rightpanel {
+    right: 0;
+}
+.leftpanel {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 110px;
+    bottom: 0px;
+    left: -30%;
+    display: flex;
+    transition: left;
+    z-index: 1;
+    
+}
+.rightpanel {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 110px;
+    bottom: 0px;
+    right: -30%;
+    display: flex;
+    transition: right;
+    z-index: 1;
+}
+.checkbox{
+    display:none;
+}
+.checkboxdos {
+    display: none;
+}
+ul li {
+    text-align: left;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+ul li:hover {
+    color: #E39D2E;
+}
+ul li:active {
+    color: gray;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    margin: 0;
+    padding: 0;
+}
+#tiendaitem h6 {
+    margin: 0;
+    padding: 0;
+}
+label{
+    margin:0;
+    padding:0;
+}
+#tiendaitem p{
+    height:0;
+    margin:0;
+    padding:0;
+}
+#tiendaitem  p h2 #titulotienda{
+    height:160px;
+}
+#cajatitulo{
+    height:65px;
+}
+.cajafila{
+    height:28px;
+    margin:0;
+    padding:0;
+}
+.cajaprecio {
+    text-align:center;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.botonsub:hover {
+    
+    color: #E39D2E;
+    
+    
+}
+    
+
+
+
