@@ -62,11 +62,7 @@
                         <asp:Label id="nombrecliente" class="botonsub" runat="server" CssClass="botonsub"></asp:Label>
                     </div>                
             </nav> 
-            
-            <div id="cajacontenedor">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>              
+            <c><div id="cajacontenedor"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div></c>
             <input type="checkbox" class="checkbox" id="check"/> 
             
                 <div class="leftpanel col3L col5M col7S col10T">                
@@ -96,7 +92,7 @@
                     <p><asp:Label ID="Label1" runat="server" ></asp:Label></p>
                     <p><asp:Label ID="Label2" runat="server" ></asp:Label></p>
                     <p><asp:Label ID="Label3" runat="server" ></asp:Label></p>
-                    <p><c><a ID="Label4" class="botonfinalizar" href="Cierre.aspx">FINALIZAR COMPRA</a></c></p>
+                    <p><c><a ID="Label4" class="botonfinalizar">FINALIZAR COMPRA</a></c></p>
                 </div>
             </div>
             <label class="panelbloqueador" for="checkdos"></label>

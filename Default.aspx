@@ -3,7 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >        
     <div class="fila">
             <img src="https://avilatechno.com/wp-content/uploads/2020/09/IMG_1959-1536x484.jpg" class="col10L col10M col10S col10T" />
-        </div>    
+        </div> 
+    
     <asp:ListView ID="ListView1" runat="server" >
         <ItemTemplate runat="server">
             <div id="tiendaitem" class="tiendaitem">                
@@ -17,7 +18,7 @@
                     <div class="cajaprecio"><p class="filaitem columnaitem"><a class="botonagregar" >AGREGAR</a></p></div>                
             </div>
         </ItemTemplate>
-    </asp:ListView>     
+    </asp:ListView>   
     
     
 </asp:Content>

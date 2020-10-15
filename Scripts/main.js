@@ -1,4 +1,5 @@
 ﻿let carts = document.querySelectorAll('.botonagregar');
+var tits = document.querySelectorAll('#cajatitulo');  
 let Direccioncli;
 let Cliente;
 let Correo;
@@ -8,6 +9,7 @@ let Telefono;
 let iDventa;
 iDventa = create_UUID();
 let products;
+
 async function getjson() {
     
     var requestOptions = {
@@ -16,20 +18,32 @@ async function getjson() {
         mode: 'cors'
     };
 
-    products = await fetch("https://localhost:44322/api/Productoes", requestOptions)
-        .then(response => response.text())
+    products = await fetch("https://paladarmobile.somee.com/api/Productoes", requestOptions)
+        .then(response => response.text())        
         .then(result => JSON.parse(result))               
         .catch(error => console.log('error', error));    
+}
+function getProduct(i) {
+    
+    let seleccionado = tits[i].textContent.toLocaleLowerCase().replace(/ /g, '').trim();
+    var result = products.find(x => x.Tag === seleccionado);
+    cartNumbers(result);
+    totalCost(result);
+    displaycart();       
 }
 
 
 
+
 for (let i = 0; i < carts.length; i++) {
+    
+    
     carts[i].addEventListener('click', () => {
+                     
         if (GuidCliente != null) {
-            cartNumbers(products[i]);
-            totalCost(products[i]);
-            displaycart();
+                     
+            getProduct(i);
+            
         }
         else {
             alert("Debes Iniciar Sesion");
@@ -197,7 +211,7 @@ function finButton() {
     finButton[0].addEventListener('click', () => {                
         let lineas = localStorage.getItem('productsInCart');
         let totalfinal = localStorage.getItem('totalCost');
-        let objetos = localStorage.getItem('cartNumbers');
+        let objetos = localStorage.getItem('cartNumbers');                        
         document.cookie = "venta= " + iDventa + "";
         lineas = JSON.parse(lineas);        
         Object.values(lineas).map((item, index) => {
@@ -218,7 +232,7 @@ function finButton() {
                     redirect: 'follow'
                 };
 
-                fetch("https://localhost:44322/api/Lineas", requestOptions)
+        fetch("https://paladarmobile.somee.com/api/Lineas", requestOptions)
                 .then(response => response.text())                    
                 .catch(error => console.log('error', error));
 
@@ -235,7 +249,7 @@ function finButton() {
             Lineas: objetos,
             SubTotal: totalfinal,
             iDVenta: iDventa,
-            Status: "PEDIDO"            
+            Status: "PAGO POR VERIFICAR"            
 
         }
         myHeaders.append("Content-Type", "application/json");
@@ -247,13 +261,18 @@ function finButton() {
             redirect: 'follow'
         };
 
-        fetch("https://localhost:44322/api/Cabeceras", requestOptions)
-            .then(response => response.text())            
+        fetch("https://paladarmobile.somee.com/api/Cabeceras", requestOptions)
+            .then(response => response.text())
+            .then(response => moveCierre())
             .catch(error => console.log('error', error));
+            
+
         
-         
     });
-             
+        
+}
+function moveCierre() {
+    location.href = "Cierre.aspx";
 }
 function getCookie(rowC) {
     var name = rowC + "=";

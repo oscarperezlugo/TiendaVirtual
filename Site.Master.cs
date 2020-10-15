@@ -28,7 +28,7 @@ namespace TiendaVirtual
                 Label3.Text = "";
             }
             SqlConnection con = new SqlConnection("workstation id=PaladarMobile.mssql.somee.com;packet size=4096;user id=paladarmobile_SQLLogin_1;pwd=evkj2c9yj5;data source=PaladarMobile.mssql.somee.com;persist security info=False;initial catalog=PaladarMobile");
-            SqlDataAdapter sda = new SqlDataAdapter("select Categoria from Producto", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Categoria from Categorias", con);
             DataTable dt = new DataTable();            
             sda.Fill(dt);
             ListViewCat.DataSource = dt;
