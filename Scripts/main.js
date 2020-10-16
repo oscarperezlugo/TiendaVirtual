@@ -232,10 +232,10 @@ function finButton() {
                     redirect: 'follow'
                 };
 
-        fetch("https://paladarmobile.somee.com/api/Lineas", requestOptions)
-                .then(response => response.text())                    
-                .catch(error => console.log('error', error));
-
+            fetch("https://paladarmobile.somee.com/api/Lineas", requestOptions)
+                .then(response => response.text())                                
+                .catch(error => console.log('error', error))
+                
             
             
             
@@ -263,13 +263,39 @@ function finButton() {
 
         fetch("https://paladarmobile.somee.com/api/Cabeceras", requestOptions)
             .then(response => response.text())
-            .then(response => moveCierre())
+            .then(response => actCant())            
             .catch(error => console.log('error', error));
             
 
         
     });
         
+}
+function actCant() {
+    let lineas = localStorage.getItem('productsInCart');
+    lineas = JSON.parse(lineas);  
+    Object.values(lineas).map((item, index) => {
+        console.log("running");
+        var myHeaders = new Headers();
+        var envio = {
+            TagDesc: item.Tag,
+            CantidadDesc: item.inCart,
+
+        }
+        myHeaders.append("Content-Type", "application/json");
+        var raw = JSON.stringify(envio);
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("https://paladarmobile.somee.com/api/Cantidad", requestOptions)
+            .then(response => response.text())
+            .then(response => moveCierre())
+            .catch(error => console.log('error', error));
+    });
 }
 function moveCierre() {
     location.href = "Cierre.aspx";
