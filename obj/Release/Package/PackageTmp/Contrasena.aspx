@@ -8,7 +8,7 @@
         <meta name="description"  content="Una Experiencia Paladar">
         <meta name="keywords"  content="Carne, Pollo, Valencia, Venezuela">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <title>Bodegón Paladar-Registrate</title>
+        <title>Bodegón Paladar</title>
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link href="Content/Columnas.css" rel="stylesheet" /> 
         <link href="Content/estilos.css" rel="stylesheet" />

@@ -12,7 +12,7 @@
     width: 60px;
     height: 60px;
     text-align: center;    
-    line-height: 4;
+    line-height: 3.8;
     margin-left: -14px;
     border-radius: 0px 20px 20px 0px;
 }
@@ -68,11 +68,11 @@ nav div{
 }
 
 
-#busqueda {
+.busqueda {
     margin: 10px 10px 10px  10px;
     height: 60px;
     border-radius: 20px 0px 0px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Trebuchet MS';
     font-weight:bold;
     border-color: black;
@@ -109,7 +109,7 @@ nav div{
     line-height: 50px;
     margin: 10px;
     text-decoration: none;    
-    font-size: 30px;
+    font-size: 28px;
     color: black;
     padding: 10px;
 }
@@ -147,7 +147,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding:10px;
 }
@@ -157,7 +157,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -168,7 +168,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding: 10px;
 }
@@ -179,7 +179,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -190,7 +190,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding: 10px;
 }
@@ -201,7 +201,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -212,7 +212,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -351,12 +351,12 @@ footer {
     color: gray;
     text-align: center;
 }
-#cajacontenedor {
+.cajacontenedor {
     margin-top:118px;
-    position:relative;
+    position:relative;  
     background-color: white;
     width:100%;
-    margin-left:0;
+    margin-left:0px;
     margin-right:0;
     margin-bottom:0;
 }
@@ -407,14 +407,7 @@ center a{
     z-index: 1;
     overflow: hidden;
 }
-.fijadordos {
-    margin:0;
-    position: fixed;
-    width: 100%;
-    top: 80px;
-    z-index: 1;
-    overflow: hidden;
-}
+
 #mapa {
     width: 100%;
     height:500px; 
@@ -446,26 +439,7 @@ center a{
 .checkboxdos:checked ~ .rightpanel {
     right: 0;
 }
-.leftpanel {    
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 110px;
-    bottom: 0px;
-    left: -100%;   
-    transition: left;
-    z-index: 2;    
-}
-.rightpanel {    
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 110px;
-    bottom: 0px;
-    right: -100%;    
-    transition: right;
-    z-index: 2;
-}
+
 .checkbox{
     display:none;
 }
@@ -767,5 +741,308 @@ formpago {
     background-color: red;    
     border-radius: 50%;
 }
+@media(min-width:1200px) {
+    .fijadordos {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busqueda {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedor {
+        margin-top: 118px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanel {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanel {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueador {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+    .panelbloqueadorizq {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:1199px) and (min-width:992px) {
+    .fijadordosL {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaL {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:60%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorL {
+        margin-top: 118px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelL {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelL {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorL {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqL {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:991px) and (min-width:768px) {
+    .fijadordosM {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 90px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaM {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:60%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorM {
+        margin-top: 128px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelM {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelM {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorM {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqM {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:767px) {
+    .fijadordosS {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 140px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaS {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:80%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorS {
+        margin-top: 178px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelS {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelS {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorS {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqS {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+
 
 

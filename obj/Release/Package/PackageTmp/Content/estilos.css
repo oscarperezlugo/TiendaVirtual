@@ -5,6 +5,32 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+#barra .fa {
+    text-decoration: none;
+    color: white;
+    background-color: black;         
+    width: 60px;
+    height: 60px;
+    text-align: center;    
+    line-height: 3.8;
+    margin-left: -14px;
+    border-radius: 0px 20px 20px 0px;
+}
+#barra .fa:hover{
+    background-color:gray;
+
+}
+#barra .fa:active{
+    background-color:white;
+}
+textbox {
+    margin: 0;
+    padding: 0;
+}
+LinkButton{
+    margin:0;
+    padding:0;
+}
 
 #nave {       
     background-color: #E39D2E;
@@ -41,23 +67,28 @@ nav div{
     line-height:60px;
 }
 
-#busqueda {
-    margin: 10px 0px 10px  10px;
+
+.busqueda {
+    margin: 10px 10px 10px  10px;
     height: 60px;
     border-radius: 20px 0px 0px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Trebuchet MS';
     font-weight:bold;
     border-color: black;
+    
 }
 #botonbuscar {
-    margin: 10px 10px 10px -4px ;
+    margin: 10px 10px 10px -15px;
     height: 60px;
+    width: 60px;
     border-radius: 0px 20px 20px 0px;
     font-size: 20px;
     border-color: black;
     background-color: black;
     color: white;
+    text-align: center;
+    text-decoration: none;
 }
 .botonbodegon {
     width:200px;
@@ -78,7 +109,7 @@ nav div{
     line-height: 50px;
     margin: 10px;
     text-decoration: none;    
-    font-size: 30px;
+    font-size: 28px;
     color: black;
     padding: 10px;
 }
@@ -116,7 +147,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding:10px;
 }
@@ -126,7 +157,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -137,7 +168,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding: 10px;
 }
@@ -148,7 +179,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -159,7 +190,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     padding: 10px;
 }
@@ -170,7 +201,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -181,7 +212,7 @@ nav div{
     margin: 10px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -235,11 +266,14 @@ footer {
     background-color:white;
     border: 2px solid black;
     border-radius: 4px;
-    width: 200px;
+    width: 205px;
     height:438px;
-    margin: 15px;
+    margin: 10px;
     padding:5px;   
     float:left;
+}
+.tiendaitem:hover {
+   box-shadow: 10px 10px 5px grey;
 }
 .filaitem{
     height:10px;
@@ -258,6 +292,7 @@ footer {
     border-radius: 5px;
     width: 100px;
     text-align:center;
+    text-decoration:none;
 }
 .botonagregar:hover {
     background-color: white;
@@ -316,12 +351,12 @@ footer {
     color: gray;
     text-align: center;
 }
-#cajacontenedor {
+.cajacontenedor {
     margin-top:118px;
-    position:relative;
+    position:relative;  
     background-color: white;
     width:100%;
-    margin-left:0;
+    margin-left:0px;
     margin-right:0;
     margin-bottom:0;
 }
@@ -372,14 +407,7 @@ center a{
     z-index: 1;
     overflow: hidden;
 }
-.fijadordos {
-    margin:0;
-    position: fixed;
-    width: 100%;
-    top: 80px;
-    z-index: 1;
-    overflow: hidden;
-}
+
 #mapa {
     width: 100%;
     height:500px; 
@@ -411,31 +439,7 @@ center a{
 .checkboxdos:checked ~ .rightpanel {
     right: 0;
 }
-.leftpanel {
-    width: 30%;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 110px;
-    bottom: 0px;
-    left: -30%;
-    display: flex;
-    transition: left;
-    z-index: 1;
-    
-}
-.rightpanel {
-    width: 30%;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 110px;
-    bottom: 0px;
-    right: -30%;
-    display: flex;
-    transition: right;
-    z-index: 1;
-}
+
 .checkbox{
     display:none;
 }
@@ -451,7 +455,9 @@ ul li {
     list-style: none;
     padding: 5px;
 }
-ul li:hover {
+
+
+ul li:hover{
     color: #E39D2E;
 }
 ul li:active {
@@ -513,7 +519,530 @@ label{
     
     
 }
+
+.productscontainer{
+    max-width:90%;    
+    margin: 0;
+    padding-top: 20px 5px;
+    color:white;
+    font-family:'Trebuchet MS';
+}
+.productscontainer ion-icon{
+
+}
+.productsheader {
+    width: 100%;  
+    display:flex;
+    justify-content:flex-start;
+    border-bottom: 4px solid;
+    border-bottom-color: lightgray;
+    margin: 0;
+    padding-top: 15px;
+}
+.productslist {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+.producttitle {
+    width: 45%;
+}
+.productprice {
+    width: 15%;
     
+}
+.quantity {
+    width: 15%;
+}
+.totalcost {
+    width: 15%;
+}
+.totalcontainer{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+    padding:10px 0;
+}
+.totaltitle {
+    width: 30%;
+}
+.totalvalue {
+    width: 10%;
+}
+.product {
+    width: 45%;
+    display: flex;    
+    align-items: center;
+    padding: 10px 0;
+    
+}
+.product ion-icon {
+    cursor: pointer;
+}
+.quantity ion-icon {
+    cursor: pointer;
+}
+.panelbloqueador {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity:0.5;
+    position: fixed;
+    top: 110px;
+    bottom: 0px;
+    right: -100%;    
+    transition: right;
+    z-index: 1;
+}
+.checkboxdos:checked ~ .panelbloqueador {
+    right: 0;
+}
+.panelbloqueadorizq {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 110px;
+    bottom: 0px;
+    left: -100%;
+    display: flex;
+    transition: left;
+    z-index: 1;
+}
+.checkbox:checked ~ .panelbloqueadorizq {
+    left: 0;
+}
+.botonfinalizar {
+    text-align: center;
+    background-color: white;
+    border-color: white;
+    width: 50%;
+    font-family: 'Trebuchet MS';
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.botonfinalizar:hover{
+    background-color:gray;
+}
+.botoncat{
+
+}
+.direcverif {
+    height: 0px; 
+    overflow: hidden;                                      
+    transition: height 0.5s ease-in; 
+    background-color: white; 
+}
+.delivery:checked ~ .direcverif {
+    height: auto;
+}
+.direccion {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.deliveryno:checked ~ .direccion {
+    height: auto;
+}
+.metodo {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+
+
+.deliverysi:checked ~ .metodo {
+    height: auto;
+}
+.metodo {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pickup:checked ~ .metodo {
+    height: auto;
+}
+.datospago {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pagodig:checked ~ .datospago {
+    height: auto;
+}
+
+
+.deliveryno:checked ~ .metodo {
+    height: auto;
+}
+.botonconfirma {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.pagodig:checked ~ .botonconfirma {
+    height: auto;
+}
+.pagoefectivo {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.efectivo:checked ~ .pagoefectivo {
+    height: auto;
+}
+formpago {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.pagodig:checked ~ .formpago {
+    height: auto;
+}
+.titulocierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: black;
+    font-weight:bold;
+}
+.opcionescierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: dimgray;
+    
+}
+.nombrecierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: #E39D2E;
+    font-weight: bold;
+}
+.searchbut{
+    
+}
+#botoncarrito span {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    background-color: red;    
+    border-radius: 50%;
+}
+@media(min-width:1200px) {
+    .fijadordos {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busqueda {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedor {
+        margin-top: 118px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanel {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanel {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueador {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+    .panelbloqueadorizq {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:1199px) and (min-width:992px) {
+    .fijadordosL {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaL {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:60%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorL {
+        margin-top: 118px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelL {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelL {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorL {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqL {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 110px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:991px) and (min-width:768px) {
+    .fijadordosM {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 90px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaM {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:60%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorM {
+        margin-top: 128px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelM {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelM {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorM {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqM {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 120px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
+@media(max-width:767px) {
+    .fijadordosS {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 140px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .busquedaS {
+        margin: 10px 10px 10px 10px;
+        height: 60px;
+        width:80%;
+        border-radius: 20px 0px 0px 20px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        font-weight: bold;
+        border-color: black;
+    }
+    .cajacontenedorS {
+        margin-top: 178px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .leftpanelS {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        left: -100%;
+        transition: left;
+        z-index: 2;
+    }
+
+    .rightpanelS {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 2;
+    }
+    .panelbloqueadorS {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        right: -100%;
+        transition: right;
+        z-index: 1;
+    }
+
+    .panelbloqueadorizqS {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 170px;
+        bottom: 0px;
+        left: -100%;
+        display: flex;
+        transition: left;
+        z-index: 1;
+    }
+}
 
 
 

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Somos.aspx.cs" Inherits="TiendaVirtual.Somos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="Content/eliminador.css" rel="stylesheet" />
     <div class="fila" id="terminos">        
         <div class="col9L">
             <h2>¿Que es BODEGÓN PALADAR?</h2>

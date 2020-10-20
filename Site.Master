@@ -21,19 +21,19 @@
                 <div  class="col2L  col0M col0S col0T" >
                     <a href="Default.aspx"><img id="logo" src="img/Recurso3.png" /></a>
                 </div>
-                <div id="barra" class="col4L col6M col6S col6T">
-                    <input class="col7L" id="busqueda" type="text" placeholder="  Hoy estoy buscando..."/>
+                <div id="barra" class="col4L col6M col6S col10T">
+                    <input class="col7L busqueda busquedaL busquedaM busquedaS" id="busqueda" type="text" placeholder="  Hoy estoy buscando..."/>
                     <a id="searchfinal" class="fa fa-search searchbut" href="Bolivares.aspx" ></a>                   
                 </div>
-                <div id="registro" class="col1L  col2M col2S col2T">
+                <div id="registro" class="col1L  col1M col1S col2T">
                     <div class="fila">
-                        <a href="Registro.aspx" id="registrobot" class="col10L col8M col8S col8T">Registrarse</a>
+                        <a href="Registro.aspx" id="registrobot" class="col10L">Registrarse</a>
                     </div>
                     <div class="fila">
-                        <a href="Login.aspx" id="sesion" class="col10L col8M col8S col8T">Logín</a>
+                        <a href="Login.aspx" id="sesion" class="col10L">Logín</a>
                     </div>             
                 </div>
-                <div id="zona" class="col1L  col0M col0S col0T">
+                <div id="zona" class="col1L  col1M col1S col2T">
                     <div class="fila">
                         <a href="Zona.aspx" id="zonat" class="col10L">Zona</a>
                     </div>
@@ -41,7 +41,7 @@
                         <a id="carabobo" href="Zona.aspx" class="col10L">Carabobo</a>
                     </div>
                 </div>
-                <div id="moneda" class="col1L  col0M col0S col0T">
+                <div id="moneda" class="col1L  col1M col1S col2T">
                     <div class="fila">
                         <a id="monedat" class="col10L">Moneda</a>
                     </div>
@@ -49,11 +49,11 @@
                         <a ID="Dolar" runat="server" class="col10L" href="Default.aspx">$/Bs.</a>                                        
                     </div>
                 </div>                
-                    <div class="col1L  col1M col1S col1T" >
+                    <div class="col1L  col1M col1S col2T" >
                         <label for="checkdos" class="fa fa-shopping-cart" id="botoncarrito"><span></span></label>                      
                     </div>                                                  
             </nav>
-            <nav id="subnav" class="fila fijadordos">
+            <nav id="subnav" class="fila fijadordos fijadordosL fijadordosM fijadordosS">
                 <div class="col1L botonsub">
                     <label class="fa fa-bars botonsub" for="check"><label class="botonsub" for="check"> Bodegón</label></label>
                 </div>
@@ -62,10 +62,10 @@
                         <asp:Label id="nombrecliente" class="botonsub" runat="server" CssClass="botonsub"></asp:Label>
                     </div>                
             </nav> 
-            <c><div id="cajacontenedor"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div></c>
+            <div id="cajacontenedor" class="cajacontenedor cajacontenedorL cajacontenedorM cajacontenedorS"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
             <input type="checkbox" class="checkbox" id="check"/> 
             
-                <div class="leftpanel col3L col5M col7S col10T">                
+                <div class="leftpanel col3L col5M col7S col10T leftpanelL leftpanelM leftpanelS">                
                     <asp:ListView ID="ListViewCat" runat="server">
                         <ItemTemplate runat="server">
                             <ul>
@@ -75,9 +75,9 @@
                     </asp:ListView>
             </div>
             
-            <label class="panelbloqueadorizq" for="check"></label>
+            <label class="panelbloqueadorizq panelbloqueadorizqL panelbloqueadorizqM panelbloqueadorizqS" for="check"></label>
             <input type="checkbox" class="checkboxdos" id="checkdos"/>
-            <div class="rightpanel col4L col5M col7S col10T productscontainer"> 
+            <div class="rightpanel col4L col5M col7S col10T productscontainer rightpanelL rightpanelM rightpanelS"> 
                 <div class="productsheader col4L col5M col7S col10T fila">
                     <h5 class="producttitle">PRODUCTO</h5>
                     <h5 class="productprice">PRECIO</h5>
@@ -95,7 +95,7 @@
                     <p><c><a ID="Label4" class="botonfinalizar">FINALIZAR COMPRA</a></c></p>
                 </div>
             </div>
-            <label class="panelbloqueador" for="checkdos"></label>
+            <label class="panelbloqueador panelbloqueadorL panelbloqueadorM panelbloqueadorS" for="checkdos"></label>
     <script src="Scripts/main.js"></script>
           
                 <div class="fila">

@@ -200,19 +200,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2014 14:26:04</publishTime>
     </File>
     <File Include="bin/TiendaVirtual.dll">
-      <publishTime>09/22/2020 16:26:45</publishTime>
+      <publishTime>10/19/2020 21:17:03</publishTime>
     </File>
     <File Include="bin/TiendaVirtual.pdb">
-      <publishTime>09/22/2020 16:26:45</publishTime>
+      <publishTime>10/19/2020 21:17:03</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 12:57:34</publishTime>
     </File>
     <File Include="Bolivares.aspx">
-      <publishTime>09/16/2020 21:05:12</publishTime>
+      <publishTime>01/10/2020 17:17:11</publishTime>
     </File>
     <File Include="Bundle.config">
       <publishTime>09/15/2020 16:42:26</publishTime>
+    </File>
+    <File Include="Categorias.aspx">
+      <publishTime>01/10/2020 18:47:01</publishTime>
+    </File>
+    <File Include="Cierre.aspx">
+      <publishTime>05/10/2020 19:02:58</publishTime>
     </File>
     <File Include="Contact.aspx">
       <publishTime>09/15/2020 16:42:26</publishTime>
@@ -244,17 +250,20 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/Columnas.css">
       <publishTime>09/18/2020 16:24:37</publishTime>
     </File>
+    <File Include="Content/eliminador.css">
+      <publishTime>09/22/2020 23:35:58</publishTime>
+    </File>
     <File Include="Content/estilos.css">
-      <publishTime>09/22/2020 16:23:12</publishTime>
+      <publishTime>10/19/2020 17:21:47</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>09/15/2020 16:42:26</publishTime>
+      <publishTime>10/19/2020 14:59:26</publishTime>
     </File>
     <File Include="Contrasena.aspx">
-      <publishTime>09/17/2020 20:31:23</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>09/22/2020 16:20:50</publishTime>
+      <publishTime>09/10/2020 20:17:08</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>09/09/2020 18:12:03</publishTime>
@@ -287,16 +296,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/15/2020 18:37:47</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>09/17/2020 23:37:59</publishTime>
+      <publishTime>05/10/2020 19:15:52</publishTime>
     </File>
     <File Include="Registro.aspx">
-      <publishTime>09/18/2020 14:51:17</publishTime>
+      <publishTime>05/10/2020 19:15:52</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>09/15/2020 16:42:44</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>09/15/2020 16:42:44</publishTime>
+    </File>
+    <File Include="Scripts/Cierre.js">
+      <publishTime>05/10/2020 19:00:59</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.js">
       <publishTime>09/15/2020 16:42:37</publishTime>
@@ -315,6 +327,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.map">
       <publishTime>09/15/2020 16:42:37</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>10/19/2020 21:15:40</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>09/15/2020 16:42:42</publishTime>
@@ -383,16 +398,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/15/2020 16:42:49</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>09/21/2020 22:40:30</publishTime>
+      <publishTime>10/19/2020 16:56:28</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>09/15/2020 16:42:50</publishTime>
     </File>
     <File Include="Somos.aspx">
-      <publishTime>09/21/2020 22:42:15</publishTime>
+      <publishTime>09/22/2020 23:37:11</publishTime>
     </File>
     <File Include="Terminos.aspx">
-      <publishTime>09/18/2020 20:13:21</publishTime>
+      <publishTime>09/22/2020 23:37:28</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
       <publishTime>09/15/2020 16:42:50</publishTime>
@@ -401,7 +416,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/16/2020 23:59:20</publishTime>
     </File>
     <File Include="Zona.aspx">
-      <publishTime>09/18/2020 20:47:41</publishTime>
+      <publishTime>09/22/2020 23:37:28</publishTime>
     </File>
   </ItemGroup>
 </Project>
