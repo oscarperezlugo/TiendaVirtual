@@ -30,7 +30,7 @@ namespace TiendaVirtual
                 else
                 {
                     Response.Write("<script>alert('En estos Momentos no se encuentra Disponible')</script>");
-                    ListView1.DataSource = dt;
+                    ListView1.DataSource = dtResult;
                 }
                     
             }

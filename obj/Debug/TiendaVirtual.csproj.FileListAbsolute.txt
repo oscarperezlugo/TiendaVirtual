@@ -69,8 +69,8 @@ C:\Users\oscar\source\repos\TiendaVirtual\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\oscar\source\repos\TiendaVirtual\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\oscar\source\repos\TiendaVirtual\bin\es\System.Web.Optimization.resources.dll
 C:\Users\oscar\source\repos\TiendaVirtual\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.csprojAssemblyReference.cache
 C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.csproj.CoreCompileInputs.cache
 C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.csproj.CopyComplete
 C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.dll
 C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.pdb
-C:\Users\oscar\source\repos\TiendaVirtual\obj\Debug\TiendaVirtual.csprojAssemblyReference.cache
