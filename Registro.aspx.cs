@@ -11,9 +11,10 @@ namespace TiendaVirtual
 {
     public partial class Registro : System.Web.UI.Page
     {
+        System.Guid GUID;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GUID = System.Guid.NewGuid();
         }        
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
@@ -34,13 +35,47 @@ namespace TiendaVirtual
                         querySaveStaff.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = Dirección.Value.ToString();
                         querySaveStaff.Parameters.Add("@FechaRegistro", SqlDbType.DateTime).Value = DateTime.Now;
                         querySaveStaff.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = Contraseña.Value.ToString();
-                        querySaveStaff.Parameters.Add("@iDCliente", SqlDbType.UniqueIdentifier).Value = System.Guid.NewGuid();
+                        querySaveStaff.Parameters.Add("@iDCliente", SqlDbType.UniqueIdentifier).Value = GUID;
                         try
                         {
                             openCon.Open();
                             querySaveStaff.ExecuteNonQuery();
                             openCon.Close();
+                            string nombre = Nombre.Value.ToString();
+                            string apellido = Apellido.Value.ToString();
+                            string cliente = "" + nombre + " " + apellido + "";
+                            HttpCookie clienteS = new HttpCookie("clienteC");
+                            clienteS.Value = cliente;
+                            clienteS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(clienteS);
+                            string idcliente = GUID.ToString();
+                            HttpCookie idclienteS = new HttpCookie("idclienteC");
+                            idclienteS.Value = idcliente;
+                            idclienteS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(idclienteS);
+                            string correo = Correo.Value.ToString();
+                            HttpCookie correoS = new HttpCookie("correoC");
+                            correoS.Value = correo;
+                            correoS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(correoS);
+                            string telefono = Telefono.Value.ToString();
+                            HttpCookie telefonoS = new HttpCookie("telefonoC");
+                            telefonoS.Value = telefono;
+                            telefonoS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(telefonoS);
+                            string direccion = Dirección.Value.ToString();
+                            HttpCookie direccionS = new HttpCookie("direccionC");
+                            direccionS.Value = direccion;
+                            direccionS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(direccionS);
+                            string row = "1";
+                            HttpCookie rowS = new HttpCookie("rowC");
+                            rowS.Value = row;
+                            rowS.Expires = DateTime.Now.AddDays(30);
+                            Response.Cookies.Add(rowS);
+                            
                             Response.Write("<script>alert('BIENVENIDO A BODEGÓN PALADAR')</script>");
+                            Response.Redirect("Default.aspx");
                         }
                         catch (SqlException ex)
                         {

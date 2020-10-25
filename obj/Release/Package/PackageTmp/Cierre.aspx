@@ -48,9 +48,12 @@
                 </div>
                 <div class="metodo">
                     <p><a class="titulocierre">Selecciona tu medio de pago</a></p> 
-                    <input type="radio"  class="pagodig" name="Tipopag"  id="pagomivil1" runat="server"/><label class="opcionescierre" >Pago Movil </label><input type="radio"  class="pagodig" name="Tipopag" id="zelle1" runat="server" /><a class="opcionescierre">Zelle </a><input type="radio"  class="pagodig" name="Tipopag"  id="paypal1" runat="server"/><a class="opcionescierre">Paypal </a><input type="radio"  class="efectivo" name="Tipopag"  id="efectivo1" runat="server"/><a class="opcionescierre">Efectivo </a>
-                
+                    <input type="radio"  class="pagodig" name="Tipopag"  id="pagomivil1" runat="server"/><label class="opcionescierre" >Pago Movil </label><input type="radio"  class="pagodigdos" name="Tipopag" id="zelle1" runat="server" /><a class="opcionescierre">Zelle </a><input type="radio"  class="pagodigtres" name="Tipopag"  id="paypal1" runat="server"/><a class="opcionescierre">Transferencia </a><input type="radio"  class="efectivo" name="Tipopag"  id="efectivo1" runat="server"/><a class="opcionescierre">Efectivo </a>
+                <p><h4 class="pagomovil">PagoMovil Bodegon Paladar, Banesco, J-412143620, 0412-4108175</h4>
+                <h4 class="zelle">Zelle, bodegonpaladarvalencia@gmail.com, Jose Brito</h4>
+                <h4 class="transferencia">Banesco, Inversiones MGJA CA, J-412143620, 01340467474671099991</h4></p>
                 <div class="datospago">
+                    
                     <div class="formpago">
                         <input class="formulario" placeholder="Nombre del Transferente" id="Text1" type="text"  runat="server"/>
                         <input class="formulario" placeholder="Correo Asociado" id="Text2" type="text"  runat="server"/>
@@ -59,6 +62,8 @@
                         <p><a class="enlaces" href="Terminos.aspx">Revisa nuestros Terminos y Condiciones</a></p>
                         <p><a class="enlaces" href="About.aspx">Preguntas Frecuentes</a></p>                        
                         <asp:Button class="botonsubmit" value="PAGADO" type="submit" runat="server" CssClass="botonsubmit" Text="REGISTRAR PAGO" OnClick="Unnamed1_Click" />                                
+                        <br />
+                        <br />
                     </div>
                     
                 </div>
@@ -66,13 +71,17 @@
                         <p><a class="enlaces" href="Terminos.aspx">Revisa nuestros Terminos y Condiciones</a></p>
                         <p><a class="enlaces" href="About.aspx">Preguntas Frecuentes</a></p>   
                         <asp:Button class="botonsubmit" value="PAGADO" type="submit" runat="server" CssClass="botonsubmit" Text="REGISTRAR PAGO" OnClick="Unnamed1_Click" />                                 
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>
             <div class="metodo">
                     <p><a class="titulocierre">Selecciona tu medio de pago</a></p> 
-                    <input type="radio"  class="pagodig" name="Tipopag" id="pagomovil2" runat="server"/><label class="opcionescierre" >Pago Movil </label><input type="radio"  class="pagodig" name="Tipopag"  id="zelle2" runat="server"/><a class="opcionescierre">Zelle </a><input type="radio"  class="pagodig" name="Tipopag" id="paypal2" runat="server" /><a class="opcionescierre">Paypal </a><input type="radio"  class="efectivo" name="Tipopag"  id="efectivo2" runat="server"/><a class="opcionescierre">Efectivo </a>
-                
+                    <input type="radio"  class="pagodig" name="Tipopag" id="pagomovil2" runat="server"/><label class="opcionescierre" >Pago Movil </label><input type="radio"  class="pagodigdos" name="Tipopag"  id="zelle2" runat="server"/><a class="opcionescierre">Zelle </a><input type="radio"  class="pagodigtres" name="Tipopag" id="paypal2" runat="server" /><a class="opcionescierre">Transferencia </a><input type="radio"  class="efectivo" name="Tipopag"  id="efectivo2" runat="server"/><a class="opcionescierre">Efectivo </a>
+                <p><h4 class="pagomovil">PagoMovil Bodegon Paladar, Banesco, J-412143620, 0412-4108175</h4>
+                <h4 class="zelle">Zelle, bodegonpaladarvalencia@gmail.com, Jose Brito</h4>
+                <h4 class="transferencia">Banesco, Inversiones MGJA CA, J-412143620, 01340467474671099991</h4></p>
                 <div class="datospago">
                     <div class="formpago">
                         <input class="formulario" placeholder="Nombre del Transferente" id="Text3" type="text"  runat="server"/>
@@ -81,7 +90,9 @@
                         <input class="formulario" placeholder="Numero de Transaccion" id="Text6" type="text"  runat="server"/>
                         <p><a class="enlaces" href="Terminos.aspx">Revisa nuestros Terminos y Condiciones</a></p>
                         <p><a class="enlaces" href="About.aspx">Preguntas Frecuentes</a></p>                        
-                        <asp:Button  OnClientClick="cierreButton()" value="PAGADO" type="submit" runat="server" CssClass="botonsubmit" Text="REGISTRAR PAGO" OnClick="Unnamed1_Click" />                                
+                        <asp:Button  OnClientClick="cierreButton()" value="PAGADO" type="submit" runat="server" CssClass="botonsubmit" Text="REGISTRAR PAGO" OnClick="Unnamed1_Click" />                                                        
+                        <br />
+                        <br />
                     </div>
                     
                 </div>
@@ -89,6 +100,8 @@
                         <p><a class="enlaces" href="Terminos.aspx">Revisa nuestros Terminos y Condiciones</a></p>
                         <p><a class="enlaces" href="About.aspx">Preguntas Frecuentes</a></p>   
                         <asp:Button  OnClientClick="cierreButton()" value="PAGADO" type="submit" runat="server" CssClass="botonsubmit" Text="REGISTRAR PAGO" OnClick="Unnamed1_Click" />                                 
+                        <br />
+                        <br />
                     </div>
                 </div>
                        

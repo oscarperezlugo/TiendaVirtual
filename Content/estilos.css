@@ -676,8 +676,42 @@ label{
     transition: height 0.5s ease-in;
     background-color: white;
 }
+.pagomovil {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.transferencia {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.pagodig:checked ~ .pagomovil {
+    height: auto;
+}
+.zelle {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pagodigdos:checked ~ .zelle {
+    height: auto;
+}
+.pagodigtres:checked ~ .transferencia {
+    height: auto;
+}
 
 .pagodig:checked ~ .datospago {
+    height: auto;
+}
+.pagodigdos:checked ~ .datospago {
+    height: auto;
+}
+.pagodigtres:checked ~ .datospago {
     height: auto;
 }
 
@@ -710,6 +744,12 @@ formpago {
     background-color: white;
 }
 .pagodig:checked ~ .formpago {
+    height: auto;
+}
+.pagodigdos:checked ~ .formpago {
+    height: auto;
+}
+.pagodigtres:checked ~ .formpago {
     height: auto;
 }
 .titulocierre {
