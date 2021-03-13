@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >        
     <div class="fila">
-            <img src="https://avilatechno.com/wp-content/uploads/2020/09/IMG_1959-1536x484.jpg" class="col10L col10M col10S col10T" />
+            <img src="https://1.bp.blogspot.com/-HorqllgiK1c/X2SmqgD5XrI/AAAAAAAAPiE/wpONkjifDGEM77xgIRQfkFVAbYNUo8J8gCLcBGAsYHQ/s16000/IMG_1959.jpg" class="col10L col10M col10S col10T" />
         </div> 
     
     <asp:ListView ID="ListView1" runat="server" >
